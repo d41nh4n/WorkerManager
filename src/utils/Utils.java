@@ -52,7 +52,7 @@ public class Utils {
         String ageSrc;
 
         do {
-            ageSrc = getInput("Enter Age(16 - 70)");
+            ageSrc = getInput("Enter Age(18 - 50)");
             if (!checkAge(ageSrc)) {
                 System.out.println("Wrong Age!");
             }
@@ -154,7 +154,7 @@ public class Utils {
     public boolean checkAge(String ageInput) {
         try {
             int ageOutput = Integer.parseInt(ageInput);
-            if (ageOutput > 16 && ageOutput < 70) {
+            if (ageOutput >= 18 && ageOutput <= 50) {
                 return true;
             }
             return false;
