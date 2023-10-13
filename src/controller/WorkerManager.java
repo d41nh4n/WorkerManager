@@ -17,7 +17,7 @@ public class WorkerManager extends Menu<String> {
     private Utils utils;
 
     public WorkerManager() {
-        super("==== Menu Worker ====", stringMenu);
+        super("========== Menu Worker ==========", stringMenu);
         utils = new Utils();
     }
 
