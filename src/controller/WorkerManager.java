@@ -15,7 +15,7 @@ import view.Menu;
  */
 public class WorkerManager extends Menu<String> {
 
-    static String[] stringMenu = {" Add Worker", "Up Salary", "Down Salary", "Display Information salary", "Exit"};
+    static String[] stringMenu = {"Add Worker", "Up Salary", "Down Salary", "Display Information salary", "Exit"};
     private Utils utils;
 
     public WorkerManager() {
