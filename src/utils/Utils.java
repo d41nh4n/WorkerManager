@@ -72,6 +72,7 @@ public class Utils {
 //------------------------------------------------------------------------------------ 
 
     public InformationSalary upSalary() {
+        System.out.println("========= Up salary =========");
         String id = getInput("Enter ID to up salary: ");
         Worker worker = findWorker(id);
         if (worker == null) {
@@ -102,7 +103,8 @@ public class Utils {
     }
 
     public InformationSalary downSalary() {
-        String id = getInput("Enter ID to up salary: ");
+        System.out.println("========= Down salary =========");
+        String id = getInput("Enter ID to down salary: ");
         Worker worker = findWorker(id);
         if (worker == null) {
             System.out.println("This ID wasn't existed");
