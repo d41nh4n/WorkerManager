@@ -1,9 +1,11 @@
+package controller;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package controller;
 
+import model.InformationSalary;
 import utils.Utils;
 import view.Menu;
 
@@ -23,6 +25,7 @@ public class WorkerManager extends Menu<String> {
 
     @Override
     public void execute() {
+        InformationSalary foundedInfor;
         boolean exit = false;
         while (!exit) {
             dispplay();
@@ -32,10 +35,18 @@ public class WorkerManager extends Menu<String> {
                     utils.getWorkers().add(utils.addWorker());
                     break;
                 case "2":
-                    utils.getInformationSalarys().add(utils.upSalary());
+                    foundedInfor = utils.upSalary();
+                    if (foundedInfor == null) {
+                    } else {
+                        utils.getInformationSalarys().add(foundedInfor);
+                    }
                     break;
                 case "3":
-                    utils.getInformationSalarys().add(utils.downSalary());
+                    foundedInfor = utils.downSalary();
+                    if (foundedInfor == null) {
+                    } else {
+                        utils.getInformationSalarys().add(foundedInfor);
+                    }
                     break;
                 case "4":
                     utils.printInformationSalary();
