@@ -30,6 +30,7 @@ public abstract class Menu<T> {
         for (int i = 0; i < mchoice.size(); i++) {
             System.out.println((i + 1) + "." + mchoice.get(i));
         }
+            System.out.println("=================================");
     }
 
 
